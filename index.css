@@ -127,5 +127,6 @@ table tr {
 }
 td {
     padding: 12px 0;
-    width: 100%;
+    padding-right: 270px;
+    width: 100%;   
 }
