@@ -31,6 +31,9 @@ body {
   color: #5f564d;
   font-family: Outfit;
   font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1, h2, h3, h4,
 button, input, label {
@@ -66,19 +69,16 @@ img {
 }
 .div-main {
     max-width: 736px;
-    /* max-height: 1872px; */
-    /* min-width: 375px; */
-    /* min-height: 1700px; */
     padding: 40px;
     background-color: #fff;
     border-radius: 24px;
     margin: 128px auto;
 }
-/* main {
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 @media screen and (max-width: 500px) {
     .div-main {
         border-radius: 0;
@@ -99,7 +99,7 @@ img {
     hr {
         width: 86%;
     }
-}
+    
 .heading h1 {
     margin-bottom: 24px;
 }
