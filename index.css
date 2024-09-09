@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Youngserif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
 *,
 *::before,
 *::after {
@@ -20,6 +28,9 @@ body {
   min-height: 100svh;
   line-height: 1.5;
   background-color: #f3e5d7;
+  color: #5f564d;
+  font-family: Outfit;
+  font-weight: normal;
 }
 h1, h2, h3, h4,
 button, input, label {
@@ -96,6 +107,7 @@ img {
 .prep-time {
     margin: 32px 0;
     padding: 24px;
+    background-color: #fff7fb;
 }
 .prep-time h3 {
     margin-bottom: 16px;
@@ -110,7 +122,7 @@ img {
     margin: 32px 0;
 }
 .nutrition {
-    margin-top: 32px;;
+    margin-top: 32px;
 }
 .nutrition p {
     margin: 24px 0 12px 0;
@@ -118,15 +130,50 @@ img {
 li {
     margin-left: -22px;
 }
+.prep-time li::marker {
+    color: #7a284e
+}
+ol > li::marker {
+    font-weight: bold;
+}
+.ingredients li::marker, .instructions li::marker {
+    color: #854632;
+}
 table {
     border-collapse: collapse;
     border-style: hidden;
 }
 table tr {
-    border: 1px solid black;
+    border: 1px solid #e3ddd7;
 }
 td {
-    padding: 12px 0;
-    padding-right: 270px;
+    padding: 12px 24px;
     width: 100%;   
+}
+h1 {
+    color: #312e2c;
+    font-size: 2.5rem;
+    line-height: 100%;
+    font-family: Youngserif;
+    font-weight: normal;
+}
+h2 {
+    color: #854632;
+    font-size: 1.75rem;
+    line-height: 100%;
+    font-family: Youngserif;
+    font-weight: normal;
+}
+h3 {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #7a284e;
+}
+.table-bold {
+    color: #854632
+}
+hr {
+    border-color: #e3ddd7;
 }
