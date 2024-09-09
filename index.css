@@ -108,6 +108,7 @@ img {
     margin: 32px 0;
     padding: 24px;
     background-color: #fff7fb;
+    border-radius: 12px;
 }
 .prep-time h3 {
     margin-bottom: 16px;
