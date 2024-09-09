@@ -19,6 +19,7 @@ ol[role='list'] {
 body {
   min-height: 100svh;
   line-height: 1.5;
+  background-color: #f3e5d7;
 }
 h1, h2, h3, h4,
 button, input, label {
@@ -47,4 +48,40 @@ textarea:not([rows]) {
 }
 :target {
   scroll-margin-block: 5ex;
+}
+img {
+    border-radius: 12px;
+}
+.div-main {
+    max-width: 736px;
+    max-height: 1872px;
+    min-width: 375px;
+    min-height: 1700px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 24px;
+    margin: 128px auto;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 500px) {
+    .div-main {
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-margin {
+        margin: 0 32px;
+    }
+    .heading {
+        margin-top: 40px;
+    }
+    .nutrition {
+        margin-bottom: 40px;
+    }
+    img {
+        border-radius: 0;
+    }
 }
