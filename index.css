@@ -74,32 +74,27 @@ img {
     border-radius: 24px;
     margin: 128px auto;
 }
-main {
+/* main {
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+table {
+    border-collapse: collapse;
+    border-style: hidden;
 }
-@media screen and (max-width: 500px) {
-    .div-main {
-        border-radius: 0;
-        padding: 0;
-    }
-    .heading {
-        margin-top: 40px;
-    }
-    .nutrition {
-        margin-bottom: 40px;
-    }
-    img {
-        border-radius: 0;
-    }
-    .mobile-padding {
-        padding: 0 32px;
-    }
-    hr {
-        width: 86%;
-    }
-    
+table tr {
+    border: 1px solid #e3ddd7;
+}
+td {
+    padding: 12px 24px;   
+}
+.nutrition {
+    margin-top: 32px;
+}
+.nutrition p {
+    margin: 24px 0 12px 0;
+}
 .heading h1 {
     margin-bottom: 24px;
 }
@@ -121,14 +116,9 @@ main {
 .instructions {
     margin: 32px 0;
 }
-.nutrition {
-    margin-top: 32px;
-}
-.nutrition p {
-    margin: 24px 0 12px 0;
-}
 li {
     margin-left: -22px;
+    padding-left: 15px;
 }
 .prep-time li::marker {
     color: #7a284e
@@ -138,16 +128,6 @@ ol > li::marker {
 }
 .ingredients li::marker, .instructions li::marker {
     color: #854632;
-}
-table {
-    border-collapse: collapse;
-    border-style: hidden;
-}
-table tr {
-    border: 1px solid #e3ddd7;
-}
-td {
-    padding: 12px 24px;   
 }
 h1 {
     color: #312e2c;
@@ -176,3 +156,24 @@ h3 {
 hr {
     border-color: #e3ddd7;
 }
+@media screen and (max-width: 500px) {
+    .div-main {
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .heading {
+        margin-top: 40px;
+    }
+    .nutrition {
+        margin-bottom: 40px;
+    }
+    img {
+        border-radius: 0;
+    }
+    .mobile-padding {
+        padding: 0 32px;
+    }
+    hr {
+        width: 86%;
+    }
